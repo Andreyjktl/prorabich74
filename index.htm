@@ -1,9 +1,34 @@
 <!DOCTYPE html>
-<!-- saved from url=(0021)http://Прорабыч74.рф.ru/ -->
+
 <html class=" js no-touch cssanimations csstransforms csstransforms3d csstransitions cssfilters mobile-false js_active  vc_desktop  vc_transform  vc_transform " lang="ru-RU" prefix="og: http://ogp.me/ns#" style=""><!--<![endif]-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
+<meta name="keywords" content="грузчики	
+вывоз мусора +с грузчиками
+	
+грузчик экспедитор
+
+грузчики цена
+
+грузчик комплектовщик
+
+грузчики мебели
+
+грузчики разнорабочие
+
+грузчик +на склад
+
+грузчик +в магазин
+
+газель +с грузчиками
+
+грузоперевозки грузчики
+
+грузчики дешево
+Квартирный переезд, офисный переезд, дачный переезд, переезд, 
+
+"/>
 			
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="http://Прорабыч74.рф.ru/xmlrpc.php">
@@ -62,6 +87,21 @@
   border-bottom: 1px solid rgba(239,219,33,0.7);}
   </style>
 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});    
+</script>
 
 
 </head>
@@ -83,8 +123,10 @@
 				<div class="mini-contacts wf-float-left">
 		<ul>
 							<li class="address">г.Челябинск</li>
-								<li class="phone">8 (952) 214-98-55</li>
+								<li class="phone">8 (952) 514-98-55</li>
+								<li class="phone">+7 (351) 751-23-56</li>
 								<li class="email">7840485@mail.ru</li>
+								<li><a href="https://vk.com/prorabih"> vk.com/prorabih</a></li>
 								<li class="clock">с 9:00 до 18:00</li>
 						</ul>
 	</div>
@@ -150,7 +192,8 @@
 				<ul class="sub-nav">
 				<li class="page_item page-item-108 first level-arrows-on"><a href="#1"><span>Погрузочно-разгрузочные работы
 				</span></a></li> 
-				<li class="page_item page-item-104 level-arrows-on"><a href="#2"><span>Складские работы</span></a></li> <li class="page_item page-item-100 level-arrows-on"><a href="#3"><span>Разнорабочие</span></a></li> 
+				<li class="page_item page-item-104 level-arrows-on"><a href="#2"><span>Складские работы</span></a></li> 
+				<li class="page_item page-item-100 level-arrows-on"><a href="#3"><span>Разнорабочие</span></a></li> 
 				<li class="page_item page-item-96 level-arrows-on"><a href="#4"><span>Офисные и квартирные переезды</span></a></li> 
 				<li class="page_item page-item-98 level-arrows-on"><a href="#5"><span>Такелаж</span></a></li> 
 				 </ul></li> 
@@ -167,16 +210,6 @@
 	</header><!-- #masthead -->
 
 
-
-
-
-
-
-
-
-
-
-	
 	<div id="main" class="sidebar-none"><!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
 
 
@@ -185,18 +218,8 @@
 		<div class="wf-wrap">
 			<div class="wf-container-main">
 
-				
-
-
-
-
-
-
-			
 
 			<div id="content" class="content" role="main">
-
-			
 					
 					<div class="wpb_row wf-container" style="margin-top: 0px; margin-bottom: 0px; min-height: 0px;">
 	<div class="wf-cell wf-span-12 wpb_column column_container ">
@@ -275,7 +298,7 @@
 			
 <p style="text-align: center;"><a href="#1"><img class="aligncenter wp-image-148 size-full" title="Погрузочно-разгрузочные работы" src="./images/pogruz.png" alt="Погрузочно-разгрузочные работы в Челябинске" width="100" height="100"></a></p>
 <p style="text-align: center;">Богатый опыт работы, позволяет нам предлагать высококачественные услуги грузчиков.</p>
-<p style="text-align: center;"><strong>Цена от 180 р/ч</strong></p>
+<p style="text-align: center;" class="price"><strong >Цена от 180 р/ч</strong></p>
 
 		</div> 
 	</div> 
@@ -288,7 +311,8 @@
 			
 <p style="text-align: center;"><a href="#2"><img class="aligncenter wp-image-150 size-full" title="Складские работы в Челябинске" src="./images/sklad.png" alt="Складские работы в Челябинске" width="100" height="100"></a></p>
 <p style="text-align: center;">Работы на строительных участках, стропольные работы.</p>
-<p style="text-align: center;"><strong>Цена от 180 р/ч</strong></p>
+<br>
+<p class="price"><strong>Цена от 180 р/ч</strong></p>
 
 		</div> 
 	</div> 
@@ -300,7 +324,7 @@
 		<div class="wpb_wrapper">
 			<a href="#3"><img class="aligncenter wp-image-149 size-full" title="Услуги разнорабочих " src="./images/raznorab.png" alt="Услуги разнорабочих Челябинск" width="100" height="100"></a><p></p>
 <p style="text-align: center;">Работы на строительных участках, монтаж и демонтаж оборудования, упаковка товаров.</p>
-<p style="text-align: center;"><strong>Цена от 150 р/ч</strong></p>
+<p class="price"><strong>Цена от 150 р/ч</strong></p>
 
 		</div> 
 	</div> 
@@ -312,7 +336,7 @@
 		<div class="wpb_wrapper">
 			<a href="#4"><img class="aligncenter wp-image-146 size-full" title="Офисные и квартирные переезды" src="./images/pereezd1.png" alt="Офисные и квартирные переезды в Челябинске" width="100" height="100"></a><p></p>
 <p style="text-align: center;">Наша работа — организация квартирных, офисных и торговых переездов любой сложности</p>
-<p style="text-align: center;"><strong>Цена от 200р/ч</strong></p>
+<p class="price"><strong>Цена от 200р/ч</strong></p>
 
 		</div> 
 	</div> 
@@ -324,7 +348,7 @@
 		<div class="wpb_wrapper">
 			<a href="#5"><img class="aligncenter wp-image-181 size-full" title="такелажные работы" src="./images/takels.png" alt="такелажные работы в Челябинске" width="100" height="100"></a><p></p>
 <p style="text-align: center;">Мы занимаемся различными видами работ, независимо от сложности, габаритов и веса грузов.</p>
-<p style="text-align: center;"><strong>Цена от&nbsp;300&nbsp;р/ч</strong></p>
+<p class="price"><strong>Цена от&nbsp;300&nbsp;р/ч</strong></p>
 
 		</div> 
 	</div> 
@@ -335,22 +359,52 @@
 	</div> 
 </div>
 
-<div id="1"  class="stripe stripe-style-4 stripe-parallax-bg parallax-bg-done" data-prlx-speed="0.2" style="padding-top: 20px; padding-bottom: 20px; margin-top: 10px; margin-bottom: 10px; min-height: 0px; background-image: url(./images/patt23.png); background-attachment: scroll; background-size: auto; background-position: 50% 127px; background-repeat: repeat;"><div class="wpb_row wf-container" style="min-height: 0px;">
+<div class="stripe stripe-style-4 stripe-parallax-bg parallax-bg-done" data-prlx-speed="0.2" style="padding-top: 20px; padding-bottom: 20px; margin-top: 10px; margin-bottom: 10px; min-height: 0px; background-image: url(./images/patt23.png); background-attachment: scroll; background-size: auto; background-position: 50% 127px; background-repeat: repeat;"><div class="wpb_row wf-container" style="min-height: 0px;">
 	<div class="wf-cell wf-span-12 wpb_column column_container ">
 			
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
-			
-<h1 style="text-align: center; margin-top: 5%;">Грузчики Челябинск</h1>
 		</div> 
 	</div> 
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
 			<img class="aligncenter wp-image-36 size-full" title="грузчики Челябинск" src="./images/bannerer1.png" alt="грузчики в Челябинске" width="854" height="627">
+	
+			<br>
+		</div> 
+		
+	</div> 
+	</div> 
+</div>
+
+<div id="1" class="wpb_row wf-container" style="min-height: 0px;">
+	<div class="wf-cell wf-span-12 wpb_column column_container ">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+		<h1  style="text-align: center; margin-top: 5%;">Погрузочно-разгрузочные работы</h1>
+		<br>
+		<div style= " width:35%; float:left; " > 
+		<img style="background-color:white; border-radius: 30px; padding:20px;"  width="350" src="./images/dostavka.jpg">
+		</div>
+		<div style= " width:65%; float:left; " > 
+		
+		<p>Наша компания предлагает услуги погрузочно-разгрузочных работ. Заказав погрузочно — разгрузочные работы у нас, Вы освобождаете себя от необходимости нанимать людей на постоянную работу. Уже через два часа после Вашего заказа, бригада грузчиков будет у Вас на складе или объекте. Вы смело можете доверить нам погрузочно разгрузочные работы любой сложности, как крупногабаритных так и хрупких вещей. «Прорабыч» предлагает услуги грузчиков для погрузки и разгрузки фур, вагонов, платформ, прочей грузовой техники, а также для осуществления складских работ и выноса строительного мусора. Мы работаем на рынке погрузочных работ достаточно долго для того, чтобы четко понимать все требования наших заказчиков. Разгрузка вагонов, равно как и разгрузка фур – работа, которая должна выполняться оперативно, аккуратно и по приемлемой цене. Те, кому часто приходится сталкиваться с организацией подобного рода работ, знают не понаслышке, насколько это важно- получить в нужный момент квалифицированную и надежную бригаду грузчиков.</p>
+
+		<p>Погрузочно-разгрузочные работы могут производиться с привлечением специальной техники — автокранов, погрузчиков. При необходимости наши грузчики бережно упакуют и перенесут Ваши вещи. Все грузчики имеют навыки складских работ, упаковки и являются профессионалами погрузочно — разгрузочных и такелажных работ. Стараясь сделать сотрудничество максимально удобным и комфортным, грузчики могут работать по двенадцать и более часов. Нами может быть организован посменный график работ, подстроенный именно под Ваши нужды.</p>
+
+		<p>Одним из ключевых преимуществ найма грузчиков в компании «Прорабыч» является стоимость работ. Наши расценки начинаются от 180 руб./час на одного грузчика- количество же грузчиков, которое требует разгрузка вагонов или разгрузка фур, вы можете определить самостоятельно. Таким образом, вы можете быть уверенны – заказанная у нас бригада грузчиков подойдет к своим обязанностям ответственно и аккуратно: разгрузка фур, вагонов или складская работа пройдет строго по графику.</p>
+		<br>
+
+<p style="text-align: center;" class="zakaz"><strong>Сделать заказ работ Вы можете ежедневно по нашему телефону 8-952-514-98-55</strong>
+<p style="text-align: center;"><strong>Цена от 180 р/ч</strong>
+</div>
 		</div> 
 	</div> 
 	</div> 
 </div></div>
+
+
 <div id="2"  class="wpb_row wf-container" style="margin-top: 0px; margin-bottom: 0px; min-height: 0px;">
 	<div class="wf-cell wf-span-12 wpb_column column_container ">
 			
@@ -363,8 +417,10 @@
 						Складские работы – подход профессионалов
 						<p>Переработки груза, сбор заказов, стикеровка, маркировка, упаковка, все эти работы требуют определенных знаний и умений.  Вы должны быть заинтересованы в том, чтобы работу в вашей компании выполнял квалифицированный складской персонал.</p>
 						<p>У нас работают  высококвалифицированные специалисты. Складской персонал нашей компании способен оказать помощь в проведении складских работ любого уровня сложности. Складские работы по заявке заказчика могут выполняться как в дневное, так и в ночное время суток. Рабочие могут быть наняты сроком сотрудничества от одного дня, с продолжительностью рабочей смены не менее 3  часов.</p>
+						<br>
+
+<p style="text-align: center;" class="zakaz"><strong>Сделать заказ на складские работы Вы можете ежедневно по нашему телефону 8-952-514-98-55</strong>
 <p style="text-align: center;"><strong>Цена от 180 р/ч</strong>
-<p style="text-align: center;"><strong>Сделать заказ услуги такелаж Вы можете ежедневно по нашему телефону 8-952-514-98-55</strong>
 				</div>
 
 			<div style="width:35%; float:left; " >
@@ -389,7 +445,7 @@
 		<h1 align="center" style="margin-top: 5%;">Услуги разнорабочих для выполнения различных работ</h1>
 		<br>
 		<div style= " width:35%; float:left; " > 
-		<img style="background-color:white; border-radius: 30px; padding:20px;"  width="400" src="./images/raznorab.png">
+		<img style="background-color:white; border-radius: 30px; padding:20px;"  width="350" src="./images/raznorab_photo.png">
 		</div>
 		<div style= " width:65%; float:left; " > 
 			<p>Современные разнорабочие – специалисты на все руки, универсалы, которые справятся с любой поставленной задачей на высоком профессиональном уровне. Рабочие различного профиля погрузки и разгрузки востребованы на строительных площадках, складских комплексах, производственных предприятиях. 
@@ -404,8 +460,9 @@
 <li>Стропольные работы</li>
 <li>складские услуги: приемка и выгрузка товара, сортировка, фасовка, маркировка</li>
 </ul>
+<br>
+<p class="zakaz"><strong>Сделать заказ на услуги разнорабочих Вы можете ежедневно по нашему телефону 8-952-514-98-55</strong>
 <p style="text-align: center;"><strong>Цена от 180 р/ч</strong>
-<p style="text-align: center;"><strong>Сделать заказ услуги такелаж Вы можете ежедневно по нашему телефону 8-952-514-98-55</strong>
 </div>
 		</div> 
 	</div> 
@@ -430,10 +487,10 @@
  <p>Мы, осуществляя переезд офиса или квартиры , несем полную материальную ответственность перед работодателем и заказчиком. Мы  работаем аккуратно и оперативно.
 <p><strong>3.	Сроки. </strong>
 <p>У нас вы можете осуществить заказ заблаговременно или в срочном порядке ( за 2 часа).
+<br>
 
+<p class="zakaz"><strong>Заказ вы можете сделать по номеру 8952-514-98-55</strong>
 <p style="text-align: center;"><strong>Цена от 200 р/ч</strong>
-
-<p style="text-align: center;"><strong>Заказ вы можете сделать по номеру 8952-514-98-55</strong>
 </div>
 <div style="width:35%; float:left; " >
 		<img width="400" src="./images/movers.png">
@@ -468,9 +525,10 @@
 <li> погрузку, выгрузку, перемещение и установку промышленного оборудования, в том числе такелаж негабаритных станков, прессов, конвейеров для производственных линий, имеющих большой вес;</li>
 <li> монтажные и демонтажные, строповочные операции со стационарными и мобильными конструкциями любых типов;</li>
 <li> профессиональное упаковывание грузов для перевозки грузовым транспортом и последующую распаковку на месте.</li> 
+<br>
 
-<p style="text-align: center;"><strong>Цена на услугу такелаж от 300р/ч</strong></p>
-<p style="text-align: center;"><strong>Сделать заказ услуги такелаж Вы можете ежедневно по нашему телефону 8-952-514-98-55</p>
+<p class="zakaz"><strong>Сделать заказ услуги такелаж Вы можете ежедневно по нашему телефону 8-952-514-98-55</p>
+<p style="text-align: center;"><strong>Цена от 300р/ч</strong></p>
 </div>
 
 </div></div></div></div></div>
@@ -487,14 +545,14 @@
 			
 <h1 style="text-align: center;" style="margin-top: 5%;"><span style="color: #000000;">Оставить заявку</span></h1>
 <br>
-		<form action="" method="post">
+		<form id="form" action="scripts/form.php" method="post" enctype="multipart/form-data">
 			<label for="name-field">Ваше имя</label>
-            <input type="text" name="login" id="name-field">
+            <input type="text" name="name-field" id="name-field" required="required">
             <label for="phone-field">Номер телефона</label>
-            <input type="text" name="login" id="phone-field">
+            <input type="text" name="phone-field" id="phone-field" required="required">
             <label for="text">Текст сообщения</label>
 
-            <textarea id="text"></textarea>
+            <textarea name="text" id="text"></textarea>
             <br>
 			<input style="align:center;" type="submit" value="Отправить">
 		</form>
@@ -526,10 +584,15 @@
 						<p align="center"> г.Челябинск, пр.Ленина 21Б.</p>
 						<br>
 						<p align="center"><strong> Телефон:</strong></p>
-						<p align="center"> 8 (952) 214-98-55</p>
+						<p align="center"> 8 (952) 514-98-55</p>
+						<p align="center"> +7 (351) 751-23-56</p>
 						<br>
 						<p align="center"><strong> E-mail:</strong></p>
 						<p  align="center"> 7840485@mail.ru</p>
+						<br>
+						<p align="center"><strong> Мы в Вконтакте:</strong></p>
+						<p  align="center"> <a style="color:black; " href="https://vk.com/prorabih"> vk.com/prorabih</a></p>
+				</div>
 				</div>
 
 			<div style="width:70%; float:left; " >
