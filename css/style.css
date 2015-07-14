@@ -73,6 +73,7 @@ text-align: center;
 
 .contacts{
 	width: 70%;
+<<<<<<< HEAD
 	height: 470px;
 text-align: center;
 padding:10px;
@@ -87,6 +88,8 @@ text-align: center;
 
 .map{
 	width: 95%;
+=======
+>>>>>>> dc1236feb71fdef68768d6482b42d5d90dac397d
 text-align: center;
 padding:10px;
 border:0px solid #efdb21;
