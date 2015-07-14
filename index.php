@@ -543,7 +543,7 @@ if (isset ($_POST['messageFF'])) {
 <input type="text" name="phoneFF" required placeholder="Телефон" x-autocompletetype="tel">
 <br>E-mail:
 <br>
-<input type="email" name="contactFF" required placeholder="E-mail" x-autocompletetype="email">
+<input type="email" name="contactFF" placeholder="E-mail" x-autocompletetype="email">
 <br>Ваше сообщение:
 <textarea name="messageFF" required rows="5"></textarea>
 <input type="submit" value="отправить">
