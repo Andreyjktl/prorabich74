@@ -53,7 +53,7 @@
 <meta property="og:url" content="http://прорабыч74.рф">
 <meta property="og:site_name" content="Прорабыч74">
 
-<script type="text/javascript" async="" src="./js/script.js"></script>
+
 
 <link rel="stylesheet" id="dt-validator-style-css" href="./css/validationEngine.jquery.css" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="./css/main.min.css" type="text/css" media="all">
@@ -82,9 +82,6 @@
   background: #ffdc00 url('./images/patt24.png') repeat center top;
   border-bottom: 1px solid rgba(239,219,33,0.7);}
   </style>
-
-
-
 
 
 </head>
@@ -293,8 +290,8 @@
 		<div class="wpb_wrapper">
 			
 <p style="text-align: center;"><a href="#2"><img class="aligncenter wp-image-150 size-full" title="Складские работы в Челябинске" src="./images/sklad.png" alt="Складские работы в Челябинске" width="100" height="100"></a></p>
-<p style="text-align: center;">Работы на строительных участках, строительные работы.</p>
-<br>
+<p style="text-align: center;">Наши грузчики сплоченной бригадой работают у Вас на складе, как постоянно, так и временно.</p>
+
 <p class="price"><strong>Цена от 180 р/ч</strong></p>
 
 		</div> 
@@ -529,16 +526,27 @@
 <h1 style="text-align: center;" style="margin-top: 5%;"><span style="color: #000000;">Оставить заявку</span></h1>
 <br>
 
-<form id="form">
-<label for="name">Ваше имя</label>
-    <input type="text" name="name" required="required"/>
-    <label for="phone">Номер телефона</label>
-    <input type="text" name="phone" required="required"/>
-     <label for="mess">Текст сообщения</label>
+<?
+if (isset ($_POST['messageFF'])) {
+  mail ("7840485@mail.ru",
+        "заполнена контактная форма с ".$_SERVER['HTTP_REFERER'],
+        "Имя: ".$_POST['nameFF']."\nТелефон: ".$_POST['phoneFF']."\nEmail: ".$_POST['contactFF']."\nСообщение: ".$_POST['messageFF']);
+  echo ('<p style="color: green; align:center">Ваше сообщение получено, спасибо!</p>');
+}
+?>
 
-     <textarea name="mess" id="text-field"></textarea>
-     <br>
-    <input type="submit" value="Заказать звонок"/>
+<form method="POST" id="feedback-form">
+Как к Вам обращаться:
+<input type="text" name="nameFF" required placeholder="фамилия имя отчество" x-autocompletetype="name">
+Телефон:
+<br>
+<input type="text" name="phoneFF" required placeholder="Телефон" x-autocompletetype="tel">
+<br>E-mail:
+<br>
+<input type="email" name="contactFF" required placeholder="E-mail" x-autocompletetype="email">
+<br>Ваше сообщение:
+<textarea name="messageFF" required rows="5"></textarea>
+<input type="submit" value="отправить">
 </form>
 
 
